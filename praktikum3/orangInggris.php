@@ -1,11 +1,9 @@
 <?php
 
-require_once "orag.php";
+require_once "Orang.php";
 
-class orangInggris extends orang{
-
-    //override
+class OrangInggris extends Orang{
     public function ucapsalam(){
-        echo "hallo my name is" . $this->nama . "<br>";
+        echo "Hello My Name Is " . $this->nama . "<br>";
     }
 }

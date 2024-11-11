@@ -16,6 +16,12 @@
 <body>
     <h1>Implementasi Session</h1>
     <P> Anda telahh mengunjungi halaman ini <?php echo $_SESSION ['count']?> kali.</p>
+
+    <!--delete seasion -->
+    <?php 
+    if(isset($_SESSION['count'])){
+        unset($_SESSION['count']);
+    }
     
 </body>
 </html>

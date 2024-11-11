@@ -1,21 +1,22 @@
 <?php
 
-class DataBase {
+class Database{
     private $host = "localhost";
-    private $username = "host";
+    private $username = "root";
     private $password = "";
-    private $DataBase ="Perpustakaan";
+    private $databasename = "perpustakaan";
     private $koneksi = null;
 
-    public function __construct(){
-    $this->koneksi = new mysqli ($this->host, $this->username, $this->password, $this->DataBase);
-    }
-    public function __destruct()
-    {
-    $this->koneksi->close();
-    }
-    public function getkoneksi(){
-        return $this->koneksi;
+    public function __construct () {
+        $this->koneksi = new mysqli($this->host, $this->username, $this->password, $this->databasename);
     }
 
+    public function __destruct()
+    {
+        $this->koneksi->close();
+    }
+
+    public function getKoneksi(){
+        return $this->koneksi;
+    }
 }

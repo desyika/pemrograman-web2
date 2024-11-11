@@ -1,7 +1,7 @@
 <?php
 
-include_once "Controller/bukucontroller.php";
+require_once "Controller/BukuController.php";
 
 //menjalankan controller
-$app = new bukucontroller();
+$app = new BukuController();
 $app->jalankan();

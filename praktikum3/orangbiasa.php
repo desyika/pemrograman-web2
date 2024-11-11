@@ -1,7 +1,7 @@
 <?php
 
-require_once "orang.php";
+require_once "Orang.php";
 
-class orangbiasa extends orang{
+class OrangBiasa extends Orang{
     
 }
